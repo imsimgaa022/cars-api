@@ -28,7 +28,7 @@ class CreateCarRequest extends FormRequest
             'model' => 'required|string|min:2|max:255',
             'year' => 'required|integer',
             'max_speed' => 'integer|between:20,300',
-            'is_automatic' => 'required|boolean|max:255',
+            'is_automatic' => 'required|boolean',
             'engine' => 'required|string|max:255',
             'number_of_doors' => 'required|integer|between:2,5'
         ];
